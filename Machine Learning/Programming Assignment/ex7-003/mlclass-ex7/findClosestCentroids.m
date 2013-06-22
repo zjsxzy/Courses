@@ -21,7 +21,19 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
-
+m = size(X, 1);
+for i = 1 : m
+    min_diff = 1000;
+    idx(i) = 0;
+    for j = 1 : K
+        new_diff = sum((X(i, :) - centroids(j, :)) .^ 2);
+        if (new_diff < min_diff)
+            min_diff = new_diff;
+            idx(i) = j;
+        end
+    end
+end
+    
 
 
 
