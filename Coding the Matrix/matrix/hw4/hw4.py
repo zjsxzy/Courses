@@ -132,7 +132,6 @@ replace_2 = ...
 replace_3 = ...
 
 
-
 ## Problem 13
 def rep2vec(u, veclist):
     '''
@@ -148,7 +147,7 @@ def rep2vec(u, veclist):
         >>> rep2vec(Vec({0,1,2}, {0:2, 1:4, 2:6}), [a0,a1,a2]) == Vec({'a', 'c', 'b', 'd'},{'a': 2, 'c': 6, 'b': 4, 'd': 0})
         True
     '''
-    pass
+    return coldict2mat(veclist) * u
 
 
 
@@ -168,7 +167,7 @@ def vec2rep(veclist, v):
         >>> vec2rep([a0,a1,a2], Vec({'a','b','c','d'}, {'a':3, 'c':-2})) == Vec({0, 1, 2},{0: 3.0, 1: 0.0, 2: -2.0})
         True
     '''
-    pass
+    return solve(coldict2mat(veclist), v)
 
 
 
