@@ -1,0 +1,5 @@
+package greeter
+
+object hello {
+
+}
