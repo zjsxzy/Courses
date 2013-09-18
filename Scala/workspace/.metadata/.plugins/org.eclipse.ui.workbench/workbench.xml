@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="13" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
 <window height="724" maximized="true" width="1251" x="2" y="22">
 <fastViewData fastViewLocation="1024"/>
@@ -8,16 +8,16 @@
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="106" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="132" y="30"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="100" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="62" y="22"/>
-<coolItem id="org.scala-ide.sdt.core.toolbar" itemType="typeToolBarContribution" x="54" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
+<coolItem id="org.scala-ide.sdt.core.toolbar" itemType="typeToolBarContribution" x="68" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="scala.texteditor.actionset" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="scala.texteditor.actionset" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.scalaide.worksheet.editors.ScriptEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="scala.tools.eclipse.ScalaSourceFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -36,11 +36,11 @@
 </folder>
 </info>
 </editorArea>
-<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="hello.scala" partName="hello.scala" path="/Users/apple/Courses/Scala/workspace/hello-project/src/greeter/hello.scala" title="hello.scala" tooltip="hello-project/src/greeter/hello.scala" workbook="DefaultEditorWorkbook">
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="hello.scala" partName="hello.scala" path="/home/v-yza/Courses/Scala/workspace/hello-project/src/greeter/hello.scala" title="hello.scala" tooltip="hello-project/src/greeter/hello.scala" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hello-project/src/greeter/hello.scala"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="71" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.scalaide.worksheet.editors.ScriptEditor" name="Sheet.sc" partName="Sheet.sc" path="/Users/apple/Courses/Scala/workspace/hello-project/src/greeter/Sheet.sc" title="Sheet.sc" tooltip="hello-project/src/greeter/Sheet.sc" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.scalaide.worksheet.editors.ScriptEditor" name="Sheet.sc" partName="Sheet.sc" path="/home/v-yza/Courses/Scala/workspace/hello-project/src/greeter/Sheet.sc" title="Sheet.sc" tooltip="hello-project/src/greeter/Sheet.sc" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hello-project/src/greeter/Sheet.sc"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="129" selectionTopPixel="0"/>
 </editor>
@@ -184,6 +184,7 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/hello-project/src/greeter/hello.scala"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/hello-project/src/greeter/hello.sc"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.scalaide.worksheet.editors.ScriptEditor" path="/hello-project/src/greeter/Sheet.sc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/hello-project/src/greeter/hello.scala"/>
 </editors>
 <item historyLabel="hello.scala" index="0">
 <position info="not_deleted" x="71" y="0"/>
@@ -194,8 +195,23 @@
 <item historyLabel="hello.scala" index="0">
 <position info="not_deleted" x="71" y="0"/>
 </item>
-<item active="true" historyLabel="Sheet.sc" index="2">
+<item historyLabel="Sheet.sc" index="2">
 <position info="not_deleted" x="330" y="0"/>
+</item>
+<item historyLabel="hello.scala" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="hello.scala" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Sheet.sc" index="2">
+<position/>
+</item>
+<item historyLabel="hello.scala" index="3">
+<position info="not_deleted" x="71" y="0"/>
+</item>
+<item active="true" historyLabel="Sheet.sc" index="2">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

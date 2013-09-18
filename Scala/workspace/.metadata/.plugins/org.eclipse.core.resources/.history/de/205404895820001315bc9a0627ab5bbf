@@ -1,0 +1,7 @@
+package week1
+
+object session {
+	1+3                                       //> res0: Int(4) = 4
+	def abs(x: Double) = if (x < 0) -x else x //> abs: (x: Double)Doubl
+	
+}
