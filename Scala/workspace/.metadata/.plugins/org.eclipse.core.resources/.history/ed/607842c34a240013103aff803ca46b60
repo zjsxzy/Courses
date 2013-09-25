@@ -1,0 +1,10 @@
+package week2
+
+object exercise3 {
+	val tolerance = 0.0001
+	def isCloseEnough(x: Double, y: Double) =
+		abs((x - y) / x) / x < tolerance
+	def fixedPoint(f: Double => Double)(firstGuess: Double) = {
+		
+	}
+}

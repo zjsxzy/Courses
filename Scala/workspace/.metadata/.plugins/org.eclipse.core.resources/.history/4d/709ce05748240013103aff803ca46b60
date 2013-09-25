@@ -1,0 +1,16 @@
+package week2
+
+object exercise2 {
+	def product(f: Int => Int)(a: Int, b: Int): Int =
+		if (a > b) 1
+		else f(a) * product(f)(a + 1, b)  //> product: (f: Int => Int)(a: Int, b: Int)Int
+	product(x => x * x)(3, 7)                 //> res0: Int = 6350400
+	
+	def sum(f: Int => Int, a: Int, b: Int) = {
+		def loop(a: Int, acc: Int): Int =
+			if (a > b) acc
+			else loop(a + 1, f(a) + acc)
+		loop(a, 0)
+	}                                         //> sum: (f: Int => Int, a: Int, b: Int)Int
+	sum(x => x * x, 3, 5)                     //> res1: Int = 50
+}
