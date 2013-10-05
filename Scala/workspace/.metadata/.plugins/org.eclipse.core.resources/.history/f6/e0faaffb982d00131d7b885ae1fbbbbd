@@ -1,0 +1,5 @@
+package week4
+
+object nth {
+  println("Welcome to the Scala worksheet")
+}

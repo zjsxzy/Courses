@@ -1,0 +1,5 @@
+package week4
+
+trait List {
+
+}
