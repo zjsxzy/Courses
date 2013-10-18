@@ -5,7 +5,8 @@ using namespace std;
 
 const int N = 40;
 
-inline void sum(int &p, int n, vector<int> &d) {
+template <class T>
+inline void sum(T &p, int n, vector<T> &d) {
 	p = 0;
 	for (int i = 0; i < n; i++)
 		p += d[i];
