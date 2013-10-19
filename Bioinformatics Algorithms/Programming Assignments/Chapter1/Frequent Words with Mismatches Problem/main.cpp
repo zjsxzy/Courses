@@ -22,8 +22,9 @@ using namespace std;
 typedef long long LL;
 
 int k, d;
-vector<string> vec;
-int match(string a, string b) {
+set<string> st;
+
+int match(const string &a, const string &b) {
 	int res = 0;
 	for (int i = 0; i < SZ(a); i++) {
 		res += a[i] != b[i];
@@ -31,33 +32,43 @@ int match(string a, string b) {
 	return res;
 }
 
-void dfs(string cur) {
-	if (SZ(cur) == k) {
-		vec.PB(cur);
-		return;
+char com[4] = {'A', 'C', 'G', 'T'};
+
+void dfs(string cur, int change) {
+	if (change >= 1 && change <= d) {
+		st.insert(cur);
 	}
-	dfs(cur + "A");
-	dfs(cur + "C");
-	dfs(cur + "G");
-	dfs(cur + "T");
+	if (change > d) return;
+	for (int i = 0; i < SZ(cur); i++) {
+		for (int k = 0; k < 4; k++) {
+			if (com[k] != cur[i]) {
+				string temp = cur;
+				temp[i] = com[k];
+				if (st.find(temp) != st.end()) continue;
+				dfs(temp, change + 1);
+			}
+		}
+	}
 }
 
 int main() {
 	string pattern, text;
 	cin >> text;
-	cout << SZ(text) << endl;
 	cin >> k >> d;
 	int mx = 0;
+	vector<string> substr;
+	for (int i = 0; i + k - 1 < SZ(text); i++) {
+		pattern = text.substr(i, k);
+		substr.PB(pattern);
+		dfs(pattern, 0);
+	}
 	vector<string> ans;
-	dfs("");
-	for (int i = 0; i < SZ(vec); i++) {
-		pattern = vec[i];
+	for (set<string>::iterator it = st.begin(); it != st.end(); it++) {
+		pattern = *it;
 		int cnt = 0;
-		for (int i = 0; i + SZ(pattern) - 1 < SZ(text); i++) {
-			string substr = text.substr(i, SZ(pattern));
-			if (match(substr, pattern) <= d) {
+		for (int i = 0; i < SZ(substr); i++) {
+			if (match(substr[i], pattern) <= d)
 				cnt++;
-			}
 		}
 		if (cnt > mx) {
 			mx = cnt; ans.clear();
