@@ -58,9 +58,9 @@ vector<int> find_substring(string pattern, string text) {
 
 int main() {
 	string pattern, text;
-	//cin >> pattern >> text;
-	pattern = "CTTGATCAT";
-	cin >> text;
+	cin >> pattern >> text;
+	//pattern = "CTTGATCAT";
+	//cin >> text;
 	vector<int> ans = find_substring(pattern, text);
 	for (int i = 0; i < ans.size(); i++) {
 		cout << ans[i] << " ";
